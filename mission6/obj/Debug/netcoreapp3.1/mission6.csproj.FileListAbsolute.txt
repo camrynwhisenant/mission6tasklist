@@ -77,3 +77,13 @@ C:\Users\jensh\Source\Repos\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mi
 C:\Users\jensh\Source\Repos\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.dll
 C:\Users\jensh\Source\Repos\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.pdb
 C:\Users\jensh\Source\Repos\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.genruntimeconfig.cache
+C:\Users\strik\OneDrive\Documents\GitHub\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.csproj.AssemblyReference.cache
+C:\Users\strik\OneDrive\Documents\GitHub\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\strik\OneDrive\Documents\GitHub\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.AssemblyInfoInputs.cache
+C:\Users\strik\OneDrive\Documents\GitHub\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.AssemblyInfo.cs
+C:\Users\strik\OneDrive\Documents\GitHub\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.csproj.CoreCompileInputs.cache
+C:\Users\strik\OneDrive\Documents\GitHub\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\strik\OneDrive\Documents\GitHub\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.RazorAssemblyInfo.cache
+C:\Users\strik\OneDrive\Documents\GitHub\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.RazorAssemblyInfo.cs
+C:\Users\strik\OneDrive\Documents\GitHub\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.dll
+C:\Users\strik\OneDrive\Documents\GitHub\mission6tasklist\mission6\obj\Debug\netcoreapp3.1\mission6.pdb
