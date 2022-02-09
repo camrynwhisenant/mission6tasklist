@@ -25,24 +25,12 @@ namespace mission6.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
         [HttpGet]
         public IActionResult TaskForm()
         {
             ViewBag.Categories = TaskContext.Categories.ToList();
-
             return View();
         }
-
 
         [HttpPost]
         public IActionResult TaskForm(Task at)
@@ -53,23 +41,25 @@ namespace mission6.Controllers
                 TaskContext.Add(at);
                 TaskContext.SaveChanges();
 
-                return View("Index", at);
+                return RedirectToAction("TaskList");
             }
             else
             {
+                ViewBag.categories = TaskContext.Categories.ToList();
                 return View(at);
             }
         }
 
-
         [HttpGet]
         public IActionResult TaskList()
         {
+            ViewBag.Categories = TaskContext.Categories.ToList();
             var task = TaskContext.Tasks
             .Include(x => x.Category)
             .OrderBy(x => x.Categoryid)
+            .Where(x => x.Completed == false)
             .ToList();
-
+        
             return View(task);
         }
 
@@ -81,15 +71,23 @@ namespace mission6.Controllers
             return View("TaskForm", category);
         }
 
-
         [HttpPost]
         public IActionResult Edit (Task at)
         {
-            TaskContext.Update(at);
-            TaskContext.SaveChanges();
-            return RedirectToAction("Index");
-        }
 
+            if (ModelState.IsValid)
+            {
+                TaskContext.Update(at);
+                TaskContext.SaveChanges();
+
+                return RedirectToAction("TaskList");
+            }
+            else
+            {
+                ViewBag.categories = TaskContext.Categories.ToList();
+                return View(at);
+            }
+        }
 
         [HttpGet]
         public IActionResult Delete(int TaskId)
@@ -105,8 +103,5 @@ namespace mission6.Controllers
             TaskContext.SaveChanges();
             return RedirectToAction("TaskList");
         }
-
-        
-
     }
 }

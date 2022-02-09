@@ -1194,26 +1194,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\strik\\.nuget\\packages\\": {}
+    "/Users/zacharyholland/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\strik\\OneDrive\\Documents\\GitHub\\mission6tasklist\\mission6\\mission6.csproj",
+      "projectUniqueName": "/Users/zacharyholland/Documents/GitHub/mission6tasklist/mission6/mission6.csproj",
       "projectName": "mission6",
-      "projectPath": "C:\\Users\\strik\\OneDrive\\Documents\\GitHub\\mission6tasklist\\mission6\\mission6.csproj",
-      "packagesPath": "C:\\Users\\strik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\strik\\OneDrive\\Documents\\GitHub\\mission6tasklist\\mission6\\obj\\",
+      "projectPath": "/Users/zacharyholland/Documents/GitHub/mission6tasklist/mission6/mission6.csproj",
+      "packagesPath": "/Users/zacharyholland/.nuget/packages/",
+      "outputPath": "/Users/zacharyholland/Documents/GitHub/mission6tasklist/mission6/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\strik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/zacharyholland/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1271,7 +1269,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }
