@@ -1,0 +1,144 @@
+﻿@{
+    ViewData["Title"] = "Task List";
+}
+
+@model List<mission6.Models.Task>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-2">
+
+        </div>
+
+        <div class="col-5">
+            Urgent
+        </div>
+
+        <div class="col-5">
+            Not Urgent
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-2">
+            Important
+        </div>
+
+        <div class="col-5">
+
+            <table class="table">
+
+                @foreach (var x in Model)
+            {
+                @if (x.Quadrant == 1)
+                {
+
+                        <tr>
+                            <td>@x.TaskName</td>
+                            <td>@x.DueDate</td>
+                            <td>@x.Category.CategoryName</td>
+                            <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskID="@x.TaskID">Edit</a></td>
+                            <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskID="@x.TaskID">Delete</a></td>
+                        </tr>
+                 }
+                 else{
+                    continue;
+                 }
+            }
+            </table>
+
+        </div>
+
+        <div class="col-5">
+
+            <table class="table">
+
+                @foreach (var x in Model)
+                {
+                    @if (x.Quadrant == 2)
+                    {
+
+                        <tr>
+                            <td>@x.TaskName</td>
+                            <td>@x.DueDate</td>
+                            <td>@x.Category.CategoryName</td>
+                            <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskID="@x.TaskID">Edit</a></td>
+                            <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskID="@x.TaskID">Delete</a></td>
+                        </tr>
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-2">
+            Not Important
+        </div>
+
+        <div class="col-5">
+
+            <table class="table">
+
+                @foreach (var x in Model)
+                {
+                    @if (x.Quadrant == 3)
+                    {
+
+                        <tr>
+                            <td>@x.TaskName</td>
+                            <td>@x.DueDate</td>
+                            <td>@x.Category.CategoryName</td>
+                            <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskID="@x.TaskID">Edit</a></td>
+                            <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskID="@x.TaskID">Delete</a></td>
+                        </tr>
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+            </table>
+
+        </div>
+
+        <div class="col-5">
+
+            <table class="table">
+
+                @foreach (var x in Model)
+                {
+                    @if (x.Quadrant == 4)
+                    {
+
+                        <tr>
+                            <td>@x.TaskName</td>
+                            <td>@x.DueDate</td>
+                            <td>@x.Category.CategoryName</td>
+                            <td><a asp-controller="Home" asp-action="Edit" asp-route-TaskID="@x.TaskID">Edit</a></td>
+                            <td><a asp-controller="Home" asp-action="Delete" asp-route-TaskID="@x.TaskID">Delete</a></td>
+                        </tr>
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

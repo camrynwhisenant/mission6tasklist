@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{3AF32C5B-3541-44A4-93AD-6F5C3B09F8F0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="mission6/Views/Home/Delete.cshtml">
+    <Files>
+      <File FileName="mission6/Controllers/HomeController.cs" Line="94" Column="10" />
+      <File FileName="mission6/Views/Home/TaskForm.cshtml" Line="1" Column="1" />
+      <File FileName="mission6/Views/Home/TaskList.cshtml" Line="145" Column="118" />
+      <File FileName="mission6/Models/Task.cs" Line="1" Column="1" />
+      <File FileName="mission6/Views/Home/Delete.cshtml" Line="2" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="mission6" expanded="True">
+            <Node name="mission6" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Delete.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="lib" expanded="True">
+                  <Node name="bootstrap" expanded="True">
+                    <Node name="dist" expanded="True">
+                      <Node name="css" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.mission6 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
