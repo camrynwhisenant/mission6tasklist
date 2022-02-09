@@ -4,20 +4,20 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using mission6.Models;
+using Task = mission6.Models.Task;
 
 namespace mission6.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private TaskContext TaskContext { get; set; }
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-            TaskContext = somename;
+        public HomeController(TaskContext someName)
+        { 
+            TaskContext = someName;
         }
 
         public IActionResult Index()
@@ -42,59 +42,71 @@ namespace mission6.Controllers
 
             return View();
         }
+
+
         [HttpPost]
-        public IActionResult TaskForm(AddTask at)
+        public IActionResult TaskForm(Task at)
         {
             ViewBag.Categories = TaskContext.Categories.ToList();
             if (ModelState.IsValid)
             {
-            TaskContext.Add(am);
-            TaskContext.SaveChanges();
+                TaskContext.Add(at);
+                TaskContext.SaveChanges();
 
-            return View("Confirmation", at);
+                return View("Index", at);
             }
             else
             {
                 return View(at);
             }
+        }
+
+
         [HttpGet]
         public IActionResult TaskList()
         {
             var task = TaskContext.Tasks
             .Include(x => x.Category)
-            .OrderBy(x => x.CategoryId)
+            .OrderBy(x => x.Categoryid)
             .ToList();
+
             return View(task);
         }
+
         [HttpGet]
         public IActionResult Edit (int TaskId)
         {
             ViewBag.Categories = TaskContext.Categories.ToList();
-            var category = TaskContext.Tasks.Single(x => x.TaskId == TaskId);
+            var category = TaskContext.Tasks.Single(x => x.TaskID == TaskId);
             return View("TaskForm", category);
         }
+
+
         [HttpPost]
-        public IActionResult Edit (AddTask at)
+        public IActionResult Edit (Task at)
         {
             TaskContext.Update(at);
             TaskContext.SaveChanges();
-            return RedirectToAction("TaskList");
+            return RedirectToAction("Index");
         }
+
+
         [HttpGet]
         public IActionResult Delete(int TaskId)
         {
-            var t = TaskContext.Tasks.Single(x => x.TaskId == TaskId);
+            var t = TaskContext.Tasks.Single(x => x.TaskID == TaskId);
             return View(t);
         }
+
         [HttpPost]
-        public IActionResult Delete(AddTask at)
+        public IActionResult Delete(Task at)
         {
             TaskContext.Tasks.Remove(at);
             TaskContext.SaveChanges();
             return RedirectToAction("TaskList");
         }
 
-        }
+        
 
     }
 }

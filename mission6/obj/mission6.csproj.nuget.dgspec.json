@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jensh\\Source\\Repos\\mission6tasklist\\mission6\\mission6.csproj": {}
+    "C:\\Users\\strik\\OneDrive\\Documents\\GitHub\\mission6tasklist\\mission6\\mission6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jensh\\Source\\Repos\\mission6tasklist\\mission6\\mission6.csproj": {
+    "C:\\Users\\strik\\OneDrive\\Documents\\GitHub\\mission6tasklist\\mission6\\mission6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jensh\\Source\\Repos\\mission6tasklist\\mission6\\mission6.csproj",
+        "projectUniqueName": "C:\\Users\\strik\\OneDrive\\Documents\\GitHub\\mission6tasklist\\mission6\\mission6.csproj",
         "projectName": "mission6",
-        "projectPath": "C:\\Users\\jensh\\Source\\Repos\\mission6tasklist\\mission6\\mission6.csproj",
-        "packagesPath": "C:\\Users\\jensh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jensh\\Source\\Repos\\mission6tasklist\\mission6\\obj\\",
+        "projectPath": "C:\\Users\\strik\\OneDrive\\Documents\\GitHub\\mission6tasklist\\mission6\\mission6.csproj",
+        "packagesPath": "C:\\Users\\strik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\strik\\OneDrive\\Documents\\GitHub\\mission6tasklist\\mission6\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jensh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\strik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
